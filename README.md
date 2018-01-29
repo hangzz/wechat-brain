@@ -3,16 +3,16 @@
 
 ## 原理说明
 
-### Charles抓包，
-  * 获取 *https://question.hortor.net/question/bat/* 返回的json数据，
-  * *Tools->Mirror* 保存为本地文件
+### Charles抓包
+  * 获取 `https://question.hortor.net/question/bat/` 返回的json数据，
+  * **Tools->Mirror** 保存为本地文件
 
 
-### *watchdog*
-  监测 *question.hortor.net/question/bat/* 下的文件
-  *  *findQuiz* => 返回题目信息，查找答案
+### watchdog监听
+  监测 `question.hortor.net/question/bat/` 下的文件
+  *  `findQuiz` => 返回题目信息，查找答案
        
-  *  *choose* => 返回正确答案，保存数据库
+  *  `choose` => 返回正确答案，保存数据库
 
 ### 模拟点击
   * IOS
